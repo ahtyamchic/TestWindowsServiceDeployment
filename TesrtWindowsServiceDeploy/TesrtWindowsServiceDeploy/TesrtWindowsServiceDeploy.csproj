@@ -101,7 +101,9 @@
     <None Include="log.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="msdeploy.proj" />
+    <None Include="msdeploy.proj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="TesrtWindowsServiceDeploy_TemporaryKey.pfx" />
   </ItemGroup>
