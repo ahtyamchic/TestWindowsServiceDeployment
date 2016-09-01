@@ -1,0 +1,16 @@
+﻿<Target Name="Publish">    
+    <PropertyGroup>
+        <ftpHost>ftp.yourwebsiteurl.com</ftpHost>
+        <ftpUser>YourFtpUsername</ftpUser>
+        <ftpPass>YourFtpPassword</ftpPass>
+    </PropertyGroup>
+        <FtpUploadDirectoryContent
+    ServerHost="$(ftpHost)"
+        Port="41"
+        Username="$(ftpUser)"
+        Password="$(ftpPass)"
+        LocalDirectory="$(bamboo.agentWorkingDirectory)/$(OutputPath)"
+        RemoteDirectory=""
+        Recursive="true"
+        />
+</Target>
